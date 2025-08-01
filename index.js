@@ -41,3 +41,6 @@ function onJoinRoom() {
     }
   });
 }
+document.getElementById("create").addEventListener("click", onCreateRoom);
+document.getElementById("join").addEventListener("click", onJoinRoom);
+
