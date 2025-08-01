@@ -1,0 +1,65 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#board {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url('board.png'); /* تأكد من وجود صورة الخلفية بنفس الاسم */
+  background-size: cover;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.win-line {
+  position: absolute;
+  width: 300px;
+  height: 5px;
+  background-color: red;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+#status {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+#wins {
+  margin-top: 10px;
+}
+
+input, button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+}

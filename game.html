@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>XO - اللعبة</title>
+  <style>
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+      margin-top: 20px;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      background-color: #eee;
+      font-size: 36px;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="status">جاري التحميل...</h2>
+  <div id="board"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+  <script src="config.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>XO - إنشاء أو انضمام</title>
+</head>
+<body>
+  <h1>لعبة XO أونلاين</h1>
+
+  <input type="text" id="playerName" placeholder="اسمك">
+  <input type="text" id="roomCode" placeholder="رمز الغرفة"><br><br>
+
+  <button onclick="onCreateRoom()">إنشاء غرفة</button>
+  <button onclick="onJoinRoom()">انضمام إلى غرفة</button>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+  <script src="config.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
